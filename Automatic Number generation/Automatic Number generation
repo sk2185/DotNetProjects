@@ -1,1 +1,26 @@
 
+* If user want to generate contiunes numbers between some of the ranges will use the below code line to generate to automatic numbers. 
+* Enumerable.Range(startrange, endrange) this code line will generate the automatic numbers between the ranges.
+
+VB.NET
+============
+Dim numbers As IEnumerable(Of Integer) = Enumerable.Range(1, 10000) ' number generation
+
+
+For i as integer =0 to numbers.count-1
+ Console.Writeline(numbers(i))
+Next
+
+
+output
+=======
+1
+2
+3
+4
+5
+.
+.
+.
+.
+10000
